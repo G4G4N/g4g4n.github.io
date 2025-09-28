@@ -1,0 +1,25 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="32" y1="22" x2="188" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#153050"/>
+      <stop offset="1" stop-color="#071426"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="188" height="188" rx="24" fill="url(#bg)" stroke="#244467" stroke-width="2"/>
+  <g opacity="0.4" stroke="#5FE7FF" stroke-width="2">
+    <circle cx="110" cy="110" r="68"/>
+    <circle cx="110" cy="110" r="92" stroke-dasharray="8 12"/>
+  </g>
+  <path d="M110 68C120.493 68 129 76.5066 129 87V94H91V87C91 76.5066 99.5066 68 110 68Z" fill="#0F253E" stroke="#5FE7FF" stroke-width="3"/>
+  <rect x="94" y="94" width="32" height="44" rx="8" fill="#102A44" stroke="#5FE7FF" stroke-width="3"/>
+  <circle cx="110" cy="114" r="6" fill="#8A5CFF"/>
+  <path d="M110 120V128" stroke="#8A5CFF" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#8A5CFF" stroke-width="3" stroke-linecap="round">
+    <path d="M58 142L78 126"/>
+    <path d="M142 142L162 126"/>
+    <path d="M110 44V60"/>
+  </g>
+  <circle cx="78" cy="126" r="9" fill="#0F253E" stroke="#5FE7FF" stroke-width="2"/>
+  <circle cx="162" cy="126" r="9" fill="#0F253E" stroke="#5FE7FF" stroke-width="2"/>
+  <circle cx="110" cy="44" r="9" fill="#0F253E" stroke="#5FE7FF" stroke-width="2"/>
+</svg>
