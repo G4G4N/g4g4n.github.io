@@ -1,378 +1,567 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Gagan Yalamuri · Cybersecurity Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio for Gagan Yalamuri, cybersecurity engineer focused on cloud security, security automation, and post-quantum cryptography.">
+    <title>Gagan Yalamuri | InfoSec Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio for Gagan Yalamuri, an Information Security Engineer building AI-assisted automations, cloud defenses, and secure-by-design workflows."
+    >
     <link rel="icon" href="images/favicon/letter-g.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
+    <div id="pointer-glow" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+
+    <header class="site-signature">
+      <a href="#intro" class="signature-mark" aria-label="Gagan Yalamuri home">Gagan Yalamuri</a>
+    </header>
+
+    <nav class="story-nav" aria-label="Section navigation">
+      <a href="#intro" class="story-link is-active" data-target="intro">Intro</a>
+      <a href="#story" class="story-link" data-target="story">Story</a>
+      <a href="#impact" class="story-link" data-target="impact">Impact</a>
+      <a href="#projects" class="story-link" data-target="projects">Builds</a>
+      <a href="#stack" class="story-link" data-target="stack">Stack</a>
+      <a href="#signal" class="story-link" data-target="signal">Signal</a>
+      <span class="story-progress"><span id="story-progress-bar"></span></span>
+    </nav>
+
     <main>
-      <header class="hero">
-        <div class="hero-content">
-          <p class="hero-kicker">Cybersecurity Engineer &amp; NYU Graduate Student</p>
-          <h1 class="hero-title">Gagan Yalamuri</h1>
-          <p class="hero-subtitle">
-            I design and automate defenses that close gaps faster than adversaries can open them. I am pursuing my M.S. in Cybersecurity at New York University (GPA 4.0) while securing global infrastructure as an Information Security Intern at Cantor Fitzgerald.
+      <section class="hero section-anchor" id="intro" data-section="intro">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">InfoSec Engineer · Security Automation · AI Workflows</p>
+          <h1>
+            Security design with
+            <span>faster judgment, calmer systems,</span>
+            and fewer reckless buttons.
+          </h1>
+          <p class="hero-lead">
+            I’m Gagan Yalamuri, a New York-based Information Security Engineer shaping cloud defense, SOAR engineering, and AI-assisted operations into systems that feel sharp under pressure.
           </p>
-          <ul class="hero-highlights">
-            <li>Reduced trusted-IP provisioning from hours to minutes across 6+ Azure tenants using XSOAR, Terraform, and GitHub automation.</li>
-            <li>Built Splunk-to-XSOAR containment that publishes network blocks to Cloudflare in under a minute with progressive quarantine policies.</li>
-            <li>Published post-quantum research and toolkits that help teams migrate PKI toward quantum-safe cryptography.</li>
-          </ul>
-          <div class="hero-links">
-            <a href="mailto:gagan.y@nyu.edu">Email</a>
-            <a href="Gagan_Yalamuri_CV.pdf">Download CV</a>
-            <a href="https://www.linkedin.com/in/gagan-yalamuri-72585214a/">LinkedIn</a>
-            <a href="https://github.com/G4G4N">GitHub</a>
-            <a href="https://medium.com/@gaganak.yalamuri">Medium</a>
+          <p class="hero-story">
+            My work spans trusted-IP orchestration across Azure tenants, Splunk-to-XSOAR containment in under a minute, post-quantum research, and operator workflows that make teams faster without making decisions sloppy.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">See the Builds</a>
+            <a class="button secondary" href="Gagan_Yalamuri_Mar_26.pdf">Open Resume</a>
+          </div>
+
+          <div class="hero-signal-grid">
+            <article class="signal-tile">
+              <span class="mono">Containment</span>
+              <strong>&lt; 1 minute</strong>
+              <p>From alert to action with explainable controls.</p>
+            </article>
+            <article class="signal-tile">
+              <span class="mono">Scale</span>
+              <strong>6+ tenants</strong>
+              <p>Tenant-wide trust controls without drift.</p>
+            </article>
+            <article class="signal-tile">
+              <span class="mono">Efficiency</span>
+              <strong>200+ hours</strong>
+              <p>Annual manual effort pulled out of the loop.</p>
+            </article>
+          </div>
+
+          <div class="hero-rack">
+            <p class="quote-chip">"Legen... wait for it... secure." Reliability still has to have style.</p>
+            <ul class="hero-tags">
+              <li>SOAR / XSOAR / Splunk</li>
+              <li>Cloud Security / AWS / Azure</li>
+              <li>Threat Intel / Detection Engineering</li>
+              <li>AI-Assisted Security Operations</li>
+            </ul>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="images/GaganYalamuri.jpg" alt="Portrait of Gagan Yalamuri" class="hero-photo">
-          <img src="images/cyber/hero-cyber.svg" alt="Abstract cybersecurity graphic" class="hero-overlay">
-        </div>
-      </header>
 
-      <section class="section" id="experience">
-        <div class="section-heading">
-          <img src="images/cyber/section-experience.svg" alt="Shield icon">
-          <div>
-            <span class="tagline">Security Experience</span>
-            <h2>Operating at Cloud &amp; SOC Scale</h2>
-          </div>
-        </div>
-        <p class="section-intro">
-          I thrive where automation, incident response, and infrastructure intersect. Below are highlights from roles where I built resilient pipelines, tightened cryptographic posture, and shipped defenses to production environments.
-        </p>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/cantor-automation.svg" alt="Network automation illustration" class="card-icon">
-              <div>
-                <h3 class="card-title">Information Security Intern</h3>
-                <p class="card-meta">Cantor Fitzgerald · New York, USA · Jun 2025 – Present</p>
-              </div>
+        <div class="hero-stage reveal">
+          <article class="mindset-card tilt-card">
+            <div class="card-topline">
+              <p class="mono">Core Mindset</p>
+              <span>One line that stays with me</span>
             </div>
-            <ul class="detail-list">
-              <li>Orchestrated trusted-IP lifecycle across 6+ Azure tenants through XSOAR, GitHub, and Terraform, eliminating configuration drift.</li>
-              <li>Shipped Splunk-to-XSOAR containment that enforces Cloudflare and EDL blocks in under a minute.</li>
-              <li>Implemented progressive 15-day and 30-day block policies with recurrence tracking to standardize threat decisions.</li>
-              <li>Built 15+ Python utilities and 5+ SOAR playbooks, saving roughly 200 hours of manual effort each year.</li>
-              <li>Automated SSL certificate renewals on F5 BIG-IP via AppViewX, preventing ~200 hours of repetitive work annually.</li>
+            <p class="mindset-quote">
+              As long as I’m alive,
+              <span>there are infinite chances.</span>
+            </p>
+            <p class="mindset-note">
+              That is how I work: stay adaptive, keep building, and never confuse a setback with an ending. The system can evolve, the workflow can improve, and the next move can still be better.
+            </p>
+          </article>
+
+          <article class="mission-card tilt-card">
+            <div class="card-topline">
+              <p class="mono">Mission Focus</p>
+              <span>Current operating thesis</span>
+            </div>
+            <h3>Build response systems that move quickly without feeling dangerous.</h3>
+            <p>
+              The goal is not more automation. It is better judgment encoded into containment, trust workflows, and analyst-facing UX.
+            </p>
+            <ul class="mission-list">
+              <li>Normalize signal before asking humans to care.</li>
+              <li>Automate reversibly so speed does not turn into chaos.</li>
+              <li>Design every workflow as if an auditor and an analyst both need to trust it.</li>
             </ul>
           </article>
 
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/secure-supplychain.svg" alt="Secure code supply chain illustration" class="card-icon">
-              <div>
-                <h3 class="card-title">Open-Source Contributor</h3>
-                <p class="card-meta">Secure Systems Lab · Brooklyn, USA · Aug 2024 – Nov 2024</p>
-              </div>
+          <article class="quote-card tilt-card">
+            <div class="card-topline">
+              <p class="mono">Signal Deck</p>
+              <span>Rotating operator notes</span>
             </div>
-            <ul class="detail-list">
-              <li>Standardized release signing with CI checks for projects safeguarding ~$5M in assets, blocking 2048-bit downgrades and unsigned artifacts.</li>
-              <li>Resolved Git and build issues across complex repos (submodules, signer trust, key sizes), accelerating release cadence and reducing triage noise.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/garrett-threat.svg" alt="Threat intel illustration" class="card-icon">
-              <div>
-                <h3 class="card-title">Cybersecurity Intern</h3>
-                <p class="card-meta">Garrett – Advancing Motion · Bengaluru, India · Feb 2023 – Aug 2023</p>
-              </div>
-            </div>
-            <ul class="detail-list">
-              <li>Integrated MISP and OpenCTI feeds for threat hunting, boosting investigation throughput by around 30%.</li>
-              <li>Hardened cryptographic communications for Mercedes ECU units to resist tampering and spoofing.</li>
-              <li>Prototyped a post-quantum X.509 migration path to future-proof PKI.</li>
-              <li>Scripted fleet management for 40+ servers, reinforcing SOC operations and reducing manual interventions.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/hcl-ml.svg" alt="Machine learning shield illustration" class="card-icon">
-              <div>
-                <h3 class="card-title">Summer Intern</h3>
-                <p class="card-meta">HCL Technologies Ltd. · Remote (India) · Jun 2022 – Aug 2022</p>
-              </div>
-            </div>
-            <ul class="detail-list">
-              <li>Built an ML-based DDoS prototype (SVM, Logistic Regression) that achieved 94% detection accuracy at the SDN layer.</li>
-              <li>Classified over 100,000 simulated IPs to isolate spoofed sources with high precision.</li>
-            </ul>
+            <p id="quote-rotator-text" class="rotator-quote">Cool cool cool. Now show me the audit trail.</p>
+            <div class="quote-dots" aria-hidden="true"></div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <img src="images/cyber/section-projects.svg" alt="Project nodes icon">
-          <div>
-            <span class="tagline">Projects &amp; Builds</span>
-            <h2>Security Engineering in Action</h2>
-          </div>
+      <section class="chapter section-anchor" id="story" data-section="story">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Storyline</p>
+          <h2>How I think when the work has to survive real pressure.</h2>
+          <p class="section-note">Less "have you met Ted," more "have you met the threat model."</p>
         </div>
-        <p class="section-intro">
-          I turn research and playbooks into shipping software. These projects span cloud security, security automation, and quantum-safe cryptography.
-        </p>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/zero-trust.svg" alt="Zero trust illustration" class="card-icon">
-              <div>
-                <h3 class="card-title"><a href="https://github.com/G4G4N/aws-zero-trust">Securing Serverless Applications in AWS</a></h3>
-                <p class="card-meta">Zero-Trust Framework · 2024</p>
+
+        <div class="story-layout">
+          <aside class="story-manifesto reveal">
+            <div class="manifesto-block">
+              <p class="mono">Operating principles</p>
+              <div class="manifesto-grid">
+                <article>
+                  <strong>Signal first</strong>
+                  <p>Noise is expensive. I care about clean evidence, not alert volume.</p>
+                </article>
+                <article>
+                  <strong>Human-legible automation</strong>
+                  <p>Every fast path still needs an explanation path.</p>
+                </article>
+                <article>
+                  <strong>Adversarial realism</strong>
+                  <p>Controls are only honest when designed against failure modes.</p>
+                </article>
               </div>
             </div>
-            <ul class="detail-list">
-              <li>Built a hardened AWS serverless stack (Lambda, API Gateway, WAF, Security Hub) governed by Zero-Trust principles.</li>
-              <li>Implemented IAM least privilege, Secrets Manager integration, and tuned WAF rules to disrupt malicious traffic.</li>
-              <li>Delivered a compliance guide and risk assessment aligned with AWS best practices.</li>
-            </ul>
-            <div class="hero-links">
-              <a href="https://github.com/G4G4N/aws-zero-trust">GitHub</a>
-              <a href="https://medium.com/@gaganak.yalamuri/aws-zero-trust">Blog Post</a>
-            </div>
-          </article>
 
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/pqct.svg" alt="Post-quantum cryptography illustration" class="card-icon">
-              <div>
-                <h3 class="card-title"><a href="https://github.com/G4G4N/PQCT">Post-Quantum Cryptography Toolkit (PQCT)</a></h3>
-                <p class="card-meta">Python Package · 2024</p>
+            <div class="chapter-hud">
+              <p class="mono chapter-label">Active Chapter</p>
+              <h3 id="chapter-title">From noise to signal</h3>
+              <p id="chapter-text">
+                Telemetry matters only when it becomes a clear, trusted next action.
+              </p>
+            </div>
+          </aside>
+
+          <div class="chapter-timeline">
+            <article
+              class="chapter-card reveal tilt-card is-current"
+              data-chapter-title="From noise to signal"
+              data-chapter-text="I design pipelines that normalize, correlate, and enrich security data so analysts act on clean signal instead of losing time in queues."
+            >
+              <div class="chapter-head">
+                <span class="chapter-index mono">01</span>
+                <span class="chapter-kicker">Observability</span>
               </div>
-            </div>
-            <ul class="detail-list">
-              <li>Implemented Kyber KEM and Dilithium signatures with NumPy vectorization for a 40% performance gain.</li>
-              <li>Published on PyPI to help practitioners experiment with quantum-resistant encryption and signatures.</li>
-              <li>Extended the toolkit with a hybrid X.509 prototype to ease migration toward quantum-safe PKI.</li>
-            </ul>
-            <div class="hero-links">
-              <a href="https://github.com/G4G4N/PQCT">GitHub</a>
-              <a href="https://pypi.org/project/pqct/">PyPI</a>
-            </div>
-          </article>
+              <h3>Make telemetry useful in motion, not just present in dashboards.</h3>
+              <p>
+                At Cantor Fitzgerald and NYU, I’ve focused on evidence paths that help responders decide faster: cloud logs, identity drift, threat intel, and the context needed to trust a next step.
+              </p>
+              <ul class="chapter-list">
+                <li>Evidence over volume</li>
+                <li>Context over raw events</li>
+                <li>Trustworthy signal over cosmetic coverage</li>
+              </ul>
+              <p class="chapter-quote">"I want to live in a world where people can trust the stuff they use."</p>
+            </article>
 
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/soar-enforcement.svg" alt="SOAR automation illustration" class="card-icon">
-              <div>
-                <h3 class="card-title"><a href="https://github.com/G4G4N/splunk-soar-mfa">Splunk SOAR – Adaptive MFA Enforcement</a></h3>
-                <p class="card-meta">Security Automation · 2024</p>
+            <article
+              class="chapter-card reveal tilt-card"
+              data-chapter-title="Automate the response path"
+              data-chapter-text="The right workflow is explainable, reversible, and strong enough to remove hours of repetitive effort from the SOC."
+            >
+              <div class="chapter-head">
+                <span class="chapter-index mono">02</span>
+                <span class="chapter-kicker">Automation</span>
               </div>
-            </div>
-            <ul class="detail-list">
-              <li>Automated identity controls in Splunk SOAR to identify and notify accounts missing MFA.</li>
-              <li>Enforced a three-strike policy before automatically locking non-compliant accounts for InfoSec approval.</li>
-              <li>Drove MFA adoption across 1,000+ accounts while cutting manual IAM operations.</li>
-            </ul>
-            <div class="hero-links">
-              <a href="https://github.com/G4G4N/splunk-soar-mfa">GitHub</a>
-              <a href="https://medium.com/@gaganak.yalamuri/splunk-soar-mfa">Blog Post</a>
-            </div>
-          </article>
+              <h3>Automate policy and judgment, not just button clicks.</h3>
+              <p>
+                I build playbooks that encode standards: progressive blocks, recurrence-aware containment, quarantine review, and trusted-IP lifecycle management across multi-cloud infrastructure.
+              </p>
+              <ul class="chapter-list">
+                <li>Containment that can be defended later</li>
+                <li>Playbooks that preserve operator trust</li>
+                <li>Fewer loops that waste analyst attention</li>
+              </ul>
+            </article>
 
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/offsec-scripts.svg" alt="Offensive security scripting illustration" class="card-icon">
-              <div>
-                <h3 class="card-title">Offensive Security – Exploit Solver Scripts</h3>
-                <p class="card-meta">Offensive Tooling · 2023 – Present</p>
+            <article
+              class="chapter-card reveal tilt-card"
+              data-chapter-title="Engineer for adversarial reality"
+              data-chapter-text="Offensive tooling, cryptographic hardening, and attack-path thinking keep my engineering grounded in how systems actually break."
+            >
+              <div class="chapter-head">
+                <span class="chapter-index mono">03</span>
+                <span class="chapter-kicker">Adversarial depth</span>
               </div>
-            </div>
-            <ul class="detail-list">
-              <li>Developed 30+ solver scripts for exploit challenges (stack overflows, ROP, shellcode) with reusable payload builders.</li>
-              <li>Standardized exploitation workflows that shrink solve time from hours to minutes.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+              <h3>Stay technical enough to understand how defenses actually fail.</h3>
+              <p>
+                My background spans exploit solver scripts, ECU cryptography hardening, release-signing workflows, and post-quantum migration prototypes built for longer-horizon threats.
+              </p>
+              <ul class="chapter-list">
+                <li>Offense informs defense</li>
+                <li>Crypto work informs architecture</li>
+                <li>Attack-path thinking keeps controls honest</li>
+              </ul>
+            </article>
 
-      <section class="section" id="research">
-        <div class="section-heading">
-          <img src="images/cyber/section-research.svg" alt="Research icon">
-          <div>
-            <span class="tagline">Research &amp; Writing</span>
-            <h2>Post-Quantum Cryptography Leadership</h2>
-          </div>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-header">
-              <img src="images/cyber/post-quantum-research.svg" alt="Post-quantum research graphic" class="card-icon">
-              <div>
-                <h3 class="card-title"><a href="https://doi.org/10.1016/j.procs.2022.12.086">A Review of the Present Cryptographic Arsenal to Deal with Post-Quantum Threats</a></h3>
-                <p class="card-meta">Procedia Computer Science · 2022 · Cited 50+ times</p>
+            <article
+              class="chapter-card reveal tilt-card"
+              data-chapter-title="Build the AI-enabled security team"
+              data-chapter-text="I’m moving toward a future where AI helps security teams triage, reason, and orchestrate actions safely without black-box risk."
+            >
+              <div class="chapter-head">
+                <span class="chapter-index mono">04</span>
+                <span class="chapter-kicker">AI-native ops</span>
               </div>
-            </div>
-            <ul class="detail-list">
-              <li>Analyzed readiness of classical cryptography for quantum adversaries and outlined migration paths for enterprises.</li>
-              <li>Co-authored with P. Honnavalli and S. Eswaran; paper is cited by industry and academic teams planning PQ transitions.</li>
-            </ul>
-            <div class="hero-links">
-              <a href="https://doi.org/10.1016/j.procs.2022.12.086">DOI</a>
-              <a href="https://www.sciencedirect.com/science/article/pii/S1877050922014860">ScienceDirect</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="section-heading">
-          <img src="images/cyber/section-skills.svg" alt="Skills icon">
-          <div>
-            <span class="tagline">Skills Stack</span>
-            <h2>Capabilities Across the Kill Chain</h2>
-          </div>
-        </div>
-        <div class="stack-grid">
-          <div class="stack-card">
-            <h3>Programming &amp; Scripting</h3>
-            <div class="chip-list">
-              <span class="chip">Python</span>
-              <span class="chip">Go</span>
-              <span class="chip">C/C++</span>
-              <span class="chip">Java</span>
-              <span class="chip">Bash</span>
-              <span class="chip">PowerShell</span>
-              <span class="chip">PHP</span>
-              <span class="chip">SQL</span>
-              <span class="chip">JavaScript</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Operating Systems &amp; Cloud</h3>
-            <div class="chip-list">
-              <span class="chip">Windows</span>
-              <span class="chip">Kali Linux</span>
-              <span class="chip">Ubuntu</span>
-              <span class="chip">macOS</span>
-              <span class="chip">AWS (EC2, S3, GuardDuty, Lambda)</span>
-              <span class="chip">Azure</span>
-              <span class="chip">GCP</span>
-              <span class="chip">Kubernetes (GKE)</span>
-              <span class="chip">Docker</span>
-              <span class="chip">OT/ICS</span>
-              <span class="chip">IoT</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Red &amp; Purple Team</h3>
-            <div class="chip-list">
-              <span class="chip">Cobalt Strike</span>
-              <span class="chip">PowerShell Empire</span>
-              <span class="chip">Covenant</span>
-              <span class="chip">BloodHound</span>
-              <span class="chip">Mimikatz</span>
-              <span class="chip">Binary Ninja</span>
-              <span class="chip">Ghidra</span>
-              <span class="chip">Pwntools</span>
-              <span class="chip">GDB</span>
-              <span class="chip">Strace</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Recon &amp; Vulnerability Assessment</h3>
-            <div class="chip-list">
-              <span class="chip">Nmap</span>
-              <span class="chip">Nessus</span>
-              <span class="chip">OpenVAS</span>
-              <span class="chip">Burp Suite</span>
-              <span class="chip">OWASP ZAP</span>
-              <span class="chip">SQLMap</span>
-              <span class="chip">AppScan</span>
-              <span class="chip">Metasploit</span>
-              <span class="chip">Wireshark</span>
-              <span class="chip">IDS/IPS</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Detection Engineering &amp; SIEM</h3>
-            <div class="chip-list">
-              <span class="chip">Splunk</span>
-              <span class="chip">Wazuh</span>
-              <span class="chip">AWS GuardDuty</span>
-              <span class="chip">CloudWatch</span>
-              <span class="chip">Endpoint Detection &amp; Response</span>
-              <span class="chip">Custom Log Pipelines</span>
-              <span class="chip">XSOAR</span>
-              <span class="chip">Xpanse Cloud Suite</span>
-              <span class="chip">Microsoft Sentinel</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>DevSecOps &amp; Automation</h3>
-            <div class="chip-list">
-              <span class="chip">Terraform</span>
-              <span class="chip">Ansible</span>
-              <span class="chip">GitHub Actions</span>
-              <span class="chip">SAST/DAST Pipelines</span>
-              <span class="chip">CloudFox</span>
-              <span class="chip">Azure IAM</span>
-              <span class="chip">API Integrations</span>
-              <span class="chip">App Registrations</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Frameworks &amp; Methodologies</h3>
-            <div class="chip-list">
-              <span class="chip">MITRE ATT&amp;CK</span>
-              <span class="chip">PTES</span>
-              <span class="chip">OWASP Top 10</span>
-              <span class="chip">NIST SP 800-53</span>
-              <span class="chip">Cyber Kill Chain</span>
-              <span class="chip">Threat Modeling</span>
-              <span class="chip">Risk Assessments</span>
-            </div>
+              <h3>Push security teams toward governed, AI-native workflows.</h3>
+              <p>
+                The direction is clear: autonomous but supervised systems for detections, internal tooling catalogs, email triage, and operational reasoning that scale with confidence.
+              </p>
+              <ul class="chapter-list">
+                <li>Agentic triage with strong guardrails</li>
+                <li>Better internal tooling discoverability</li>
+                <li>Faster response without black-box drift</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="education">
-        <div class="section-heading">
-          <img src="images/cyber/section-education.svg" alt="Education icon">
-          <div>
-            <span class="tagline">Education &amp; Certifications</span>
-            <h2>Lifelong Learning in Security</h2>
+      <section class="impact section-anchor" id="impact" data-section="impact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Impact</p>
+          <h2>Useful security outcomes, not decorative security theater.</h2>
+          <p class="section-note">No mystery-box metrics. Rosa would hate that.</p>
+        </div>
+
+        <div class="impact-layout">
+          <article class="impact-feature reveal tilt-card">
+            <div class="impact-feature-top">
+              <div class="card-topline">
+                <p class="mono">Case Study</p>
+                <span>Containment architecture</span>
+              </div>
+              <h3>Contain in under a minute, without making bad calls faster.</h3>
+              <p>
+                I shipped Splunk-to-XSOAR containment that routes enriched detections into decisive actions, then publishes network blocks through Cloudflare and EDL workflows with policy-aware guardrails.
+              </p>
+            </div>
+
+            <div class="impact-feature-bottom">
+              <div class="impact-flow">
+                <span>Detection</span>
+                <span>Enrichment</span>
+                <span>Policy</span>
+                <span>Containment</span>
+              </div>
+              <div class="impact-mini-grid">
+                <div>
+                  <strong>&lt; 1 min</strong>
+                  <p>Mean time to contain</p>
+                </div>
+                <div>
+                  <strong>15 / 30 day</strong>
+                  <p>Progressive block logic</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="impact-grid">
+            <article class="impact-card reveal tilt-card">
+              <span class="impact-value" data-count="1">&lt;1</span>
+              <p class="impact-label">minute mean time to contain after shipping Splunk-to-XSOAR enforcement with Cloudflare and EDL publishing.</p>
+            </article>
+            <article class="impact-card reveal tilt-card">
+              <span class="impact-value" data-count="6">6+</span>
+              <p class="impact-label">Azure tenants orchestrated through Terraform, GitHub Actions, and SOAR for zero-drift trusted-IP operations.</p>
+            </article>
+            <article class="impact-card reveal tilt-card">
+              <span class="impact-value" data-count="200">200+</span>
+              <p class="impact-label">manual hours removed annually across certificate renewals, triage flows, and control enforcement.</p>
+            </article>
+            <article class="impact-card reveal tilt-card">
+              <span class="impact-value" data-count="50">50+</span>
+              <p class="impact-label">citations on post-quantum cryptography research, connecting academic depth to applied security engineering.</p>
+            </article>
           </div>
         </div>
-        <div class="stack-grid">
-          <div class="stack-card">
-            <h3>Education</h3>
-            <div class="chip-list">
-              <span class="chip">M.S. Cybersecurity · New York University · Sept 2024 – May 2026 (Expected) · GPA 4.0/4.0</span>
-              <span class="chip">B.Tech Computer Science &amp; Engineering · PES University · Aug 2019 – July 2023</span>
+
+        <div class="experience-strip reveal">
+          <article>
+            <p class="mono">Cantor Fitzgerald</p>
+            <h3>Information Security</h3>
+            <p>SOAR engineering, block automation, tenant-wide trust controls, AI-assisted triage.</p>
+          </article>
+          <article>
+            <p class="mono">NYU Tandon</p>
+            <h3>Graduate Assistant</h3>
+            <p>Cloud security labs, GuardDuty investigations, and student mentoring across AWS and Vault.</p>
+          </article>
+          <article>
+            <p class="mono">Secure Systems Lab</p>
+            <h3>Open Source Contributor</h3>
+            <p>Release-signing integrity, CI trust hardening, and secure software supply chain discipline.</p>
+          </article>
+          <article>
+            <p class="mono">Garrett</p>
+            <h3>Cybersecurity Intern</h3>
+            <p>Threat intel workflows, OpenCTI and MISP integration, and ECU cryptography hardening.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-anchor" id="projects" data-section="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Builds</p>
+          <h2>The repo trail behind the operator.</h2>
+          <p class="section-note">A little Straw Hat energy: move fast, protect the crew, leave the ship better.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal tilt-card featured">
+            <div class="project-top">
+              <p class="mono">SOAR / Integration</p>
+              <span>Python</span>
+            </div>
+            <h3>SplunkSOAR_XSOAR</h3>
+            <p>
+              An integration bridge for Cortex XSOAR 8 indicator management, aligned with the kind of systems work I do in security orchestration and response engineering.
+            </p>
+            <div class="project-tags">
+              <span>SOAR</span>
+              <span>Indicator Management</span>
+              <span>Security Automation</span>
+            </div>
+            <a href="https://github.com/G4G4N/SplunkSOAR_XSOAR">Open Repository</a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-top">
+              <p class="mono">Applied Crypto</p>
+              <span>Python</span>
+            </div>
+            <h3>post-quantum-cypto-toolkit</h3>
+            <p>Practical experimentation with quantum-safe algorithms, turning research into usable migration intuition.</p>
+            <div class="project-tags">
+              <span>PQC</span>
+              <span>Kyber / Dilithium</span>
+              <span>Research to Code</span>
+            </div>
+            <a href="https://github.com/G4G4N/post-quantum-cypto-toolkit">Open Repository</a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-top">
+              <p class="mono">Offensive Tooling</p>
+              <span>Python</span>
+            </div>
+            <h3>AutoPTT</h3>
+            <p>Automatic penetration testing tooling that reinforces my offensive mindset when building resilient defenses.</p>
+            <div class="project-tags">
+              <span>Attack Simulation</span>
+              <span>Security Testing</span>
+              <span>Automation</span>
+            </div>
+            <a href="https://github.com/G4G4N/AutoPTT">Open Repository</a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-top">
+              <p class="mono">Secure Systems</p>
+              <span>Python</span>
+            </div>
+            <h3>SplitSmartSecure</h3>
+            <p>A cryptographic expense-splitting app with signed Diffie-Hellman, RSA-PSS, AES-GCM, and a tamper-evident ledger.</p>
+            <div class="project-tags">
+              <span>E2E Security</span>
+              <span>Integrity</span>
+              <span>Protocol Design</span>
+            </div>
+            <a href="https://github.com/G4G4N/SplitSmartSecure">Open Repository</a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-top">
+              <p class="mono">Cloud / Crypto</p>
+              <span>Python</span>
+            </div>
+            <h3>applied-crypto-multiparty-otp</h3>
+            <p>A multi-party one-time-pad communication protocol from NYU coursework, showing the cryptographic foundations behind my security engineering work.</p>
+            <div class="project-tags">
+              <span>Applied Cryptography</span>
+              <span>NYU</span>
+              <span>Protocol Security</span>
+            </div>
+            <a href="https://github.com/G4G4N/applied-crypto-multiparty-otp">Open Repository</a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-top">
+              <p class="mono">Trust / Supply Chain</p>
+              <span>Python</span>
+            </div>
+            <h3>taf</h3>
+            <p>The Archive Framework aligns with my work on release-signing integrity and trustworthy software supply chains.</p>
+            <div class="project-tags">
+              <span>Secure Releases</span>
+              <span>Signing</span>
+              <span>Software Integrity</span>
+            </div>
+            <a href="https://github.com/G4G4N/taf">Open Repository</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack section-anchor" id="stack" data-section="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Operating Stack</p>
+          <h2>Capabilities across incident response, cloud defense, and secure automation.</h2>
+          <p class="section-note">Built for "suuper" practical security, not decorative complexity.</p>
+        </div>
+
+        <div class="stack-layout">
+          <div class="stack-panel reveal">
+            <div class="stack-switcher" role="tablist" aria-label="Capability views">
+              <button class="stack-tab is-active" data-stack="automation" role="tab" aria-selected="true">Automation</button>
+              <button class="stack-tab" data-stack="cloud" role="tab" aria-selected="false">Cloud</button>
+              <button class="stack-tab" data-stack="offense" role="tab" aria-selected="false">Offense</button>
+            </div>
+
+            <div class="stack-display">
+              <div class="stack-view is-active" data-stack-view="automation">
+                <h3>Automation systems for serious security teams</h3>
+                <p>Splunk, XSOAR, GitHub Actions, Terraform, Python, alert enrichment, response playbooks, and AI-assisted triage flows.</p>
+                <ul class="stack-points">
+                  <li>Analyst-facing workflows that stay legible under pressure</li>
+                  <li>Policy-aware containment and trust orchestration</li>
+                  <li>Operational guardrails instead of magic black boxes</li>
+                </ul>
+              </div>
+              <div class="stack-view" data-stack-view="cloud">
+                <h3>Cloud-native security operations</h3>
+                <p>AWS, Azure, Kubernetes, GuardDuty, CloudWatch, IAM, WAF, Security Hub, and incident-ready infrastructure patterns.</p>
+                <ul class="stack-points">
+                  <li>Identity and trust controls across multi-cloud environments</li>
+                  <li>Secure-by-default infrastructure with real response paths</li>
+                  <li>Zero-drift operations via Terraform and GitHub automation</li>
+                </ul>
+              </div>
+              <div class="stack-view" data-stack-view="offense">
+                <h3>Adversarial thinking and validation</h3>
+                <p>Pwntools, Ghidra, Binary Ninja, BloodHound, Mimikatz, protocol analysis, exploit development, and attack-path awareness.</p>
+                <ul class="stack-points">
+                  <li>Understand where controls crack before production does</li>
+                  <li>Model attacker paths, not just defender wishful thinking</li>
+                  <li>Use offensive depth to make defensive choices sharper</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="stack-card">
-            <h3>Certifications</h3>
-            <div class="chip-list">
-              <span class="chip">AWS Certified Security – Specialty (In Progress)</span>
-              <span class="chip">CompTIA Security+ (In Progress)</span>
-              <span class="chip">Certified Ethical Hacker (Planned)</span>
-              <span class="chip">CISSP (Planned)</span>
-            </div>
+
+          <div class="capability-grid">
+            <article class="capability-card reveal tilt-card">
+              <h3>Detection &amp; Response</h3>
+              <p>Splunk, XSOAR, Wazuh, GuardDuty, Sentinel, custom pipelines, incident management, crisis response.</p>
+            </article>
+            <article class="capability-card reveal tilt-card">
+              <h3>Automation &amp; DevSecOps</h3>
+              <p>Python, Go, Bash, Terraform, Ansible, GitHub Actions, SAST/DAST workflows, operator enablement.</p>
+            </article>
+            <article class="capability-card reveal tilt-card">
+              <h3>Cloud &amp; Infrastructure</h3>
+              <p>AWS, Azure, GCP, Docker, Kubernetes, IAM, Secrets Manager, network segmentation, and zero-trust patterns.</p>
+            </article>
+            <article class="capability-card reveal tilt-card">
+              <h3>Threat &amp; Crypto</h3>
+              <p>Threat intel operations, post-quantum cryptography, secure protocol design, signing integrity, RBAC, and PAM.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <footer>
-        Based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's template</a>. Always open to collaboration on cloud security, security automation, and post-quantum cryptography.
-      </footer>
+      <section class="signal section-anchor" id="signal" data-section="signal">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signal</p>
+          <h2>Research, credentials, and the direction this career is heading.</h2>
+          <p class="section-note">Research depth, operator range, and enough adaptability to keep evolving when the rules change.</p>
+        </div>
+
+        <div class="signal-layout">
+          <div class="signal-grid">
+            <article class="signal-card reveal tilt-card">
+              <p class="mono">Research</p>
+              <h3>A Review of the Present Cryptographic Arsenal to Deal with Post-Quantum Threats</h3>
+              <p>Published in Procedia Computer Science and cited 50+ times, connecting long-horizon cryptographic change to practical engineering choices.</p>
+              <a href="https://doi.org/10.1016/j.procs.2022.12.086">Read the paper</a>
+            </article>
+
+            <article class="signal-card reveal tilt-card">
+              <p class="mono">Education</p>
+              <h3>NYU M.S. Cybersecurity · GPA 4.0</h3>
+              <p>Graduate work focused on cloud security, applied cryptography, and the systems thinking required to design dependable defenses.</p>
+            </article>
+
+            <article class="signal-card reveal tilt-card">
+              <p class="mono">Recognition</p>
+              <h3>Certified and operator-minded</h3>
+              <p>Certified Network Security Professional, Academic Achievers Award recipient, and consistently drawn toward work that proves security value through execution.</p>
+            </article>
+          </div>
+
+          <div class="contact-column reveal">
+            <article class="contact-panel">
+              <div>
+                <p class="eyebrow">Next Mission</p>
+                <h2>I’m building toward AI-native security operations with real production depth.</h2>
+                <p>If you’re designing faster response systems, safer automations, or cloud defense programs that need rigor with velocity, let’s talk.</p>
+              </div>
+
+              <div class="contact-actions">
+                <a class="button primary" href="mailto:gagan.y@nyu.edu">Email Me</a>
+                <a class="button secondary" href="https://github.com/G4G4N">GitHub</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/gagan-yalamuri-72585214a/">LinkedIn</a>
+                <a class="button secondary" href="https://medium.com/@gaganak.yalamuri">Medium</a>
+              </div>
+            </article>
+
+            <article class="contact-note tilt-card">
+              <div class="card-topline">
+                <p class="mono">Operator Note</p>
+              </div>
+              <p>
+                The best systems feel like a well-run crew: calm under pressure, fiercely reliable, and always ready for the next move. That mindset matters more than any single tool.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
